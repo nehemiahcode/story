@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/f8c8d43adc.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="girl-reading.ico">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <title>The Beginning of Success....</title>
 </head>
 <body>
@@ -32,7 +32,7 @@
         
           </div>
           <div class="actual-content1">
-            <img src="girl-reading (2).jpg" id="img">
+            <img src="girl-reading (2).jpg" id="img" alt="girl-reading (2).jpg">
           </div>    
          </div>
     </section>
@@ -89,14 +89,75 @@
                 <img src="girl-reading (2).jpg" class="img2" alt="girl-reading.jpg" width="90%" height="300px">
             </div>
         </div>
-       <button onclick="typeWriter()">Next<i class="fa fa-arrow-right"></i></button>
+       <button onclick="typeWriter()" id="button1" type="button">Next<i class="fa fa-arrow-right"></i></button>
        <p id="demo"></p>
     </section>
+    
+      <section id="myContent">
+
+    <section class="chapter-3">
+      <h2>Rising to the Challenge</h2>
+      <p class="p2">
+        <span>T</span>he next day, Samantha woke up feeling a sense of determination.
+         She had a new goal in mind, and she was ready
+         to do whatever it takes to achieve it.
+         <br><br>
+        As she sat down at her desk, Samantha took out a piece of paper
+        and started writing down a plan. She mapped out the steps she needed to take
+         in order to succeed, and made a list of potential obstacles she might encounter
+          along the way.
+      </p>
+      <p class="p3">
+        Samantha knew that she needed to work hard in order to make her dreams a reality. 
+        She spent hours researching and studying, determined to become an expert in her field.
+        She also made sure to network with other professionals, attending conferences and
+        events in order to make valuable connections.
+            <br><br>
+        But despite her hard work, Samantha faced many challenges. 
+        There were times when she felt like giving up, when it seemed like the odds were stacked against her.
+        But she refused to let these setbacks defeat her.
+        Instead, she used them as motivation to work even harder.
+      </p>
+
+
+      <p class="p4">
+        Through perseverance and determination, Samantha slowly but surely began to see results.
+         Her hard work paid off, and she was soon recognized as an expert in her field.
+          She landed high-profile clients and was featured in prominent publications,
+           cementing her status as a rising star.
+           <br><br>
+        Looking back, Samantha realized that the journey to success wasn't easy,
+         but it was worth it. She was grateful for the challenges she faced, 
+         as they made her stronger and more resilient. And as she set her sights on even greater goals, 
+         she knew that she was ready for whatever challenges lay ahead, and they were..!.
+      </p>
+      <img src="girl-running (2).jpg" alt="girl-running (2).jpg" class="img2"  height="300px">
+    </section>
+
+
+    <section class="section4">
+      <h2>Breaking Through Barriers</h2>
+      <button id="start" onclick="typeWrite()" onmouseup="showButton()" id="button1"  type="button" class="button">Continue..</button>
+
+      <p class="p4" id="p4">
+
+      </p>
+      <br><br>
+      <button type="button" class="button" id="button2" onmouseup="showButton2()" onclick="typewrite2()">I got the point..</button>
+     <p class="p4" id="p5">
+       
+     </p>
+     <br>
+     <button type="button" class="button" id="button3" onclick="typewrite3()">Move on..</button>
+     <p class="p4" id="p6">
+       
+     </p>
+     <img src="girl-pushing.jpg" alt="girl-pushing-door.jpg" class="img2 image" height="300px" style="display:none">
+    </section>
+  </section>
+    
 </main>
 
-<script>
-
-</script>
 
 <center>
 <footer>
@@ -112,22 +173,124 @@
 
 
 
-       <script>
-    //     var lastScrollTop = 0;
-    //   window.addEventListener("scroll", function(){
-    //   var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-    //   if (currentScroll > lastScrollTop){
-    //    // Scrolling down
-    //    document.querySelector('.header').classList.add('hide');
-    //  } else {
-    //    // Scrolling up
-    //      document.querySelector('.header').classList.remove('hide');
-    //   }
-    //     lastScrollTop = currentScroll;
-    //  }, false);
+   <script>
+
+        let button2 = document.getElementById("button2");
+        let button3 = document.getElementById("button3");
+        let image = document.querySelector(".image");
+        function showButton() {
+        button2.style.display = "block";
+       }
+       function showButton2() {
+        button3.style.display = "block";
+        image.style.display = "block";
+       }
+
+
+    
+// Get the current time
+let now = new Date().getTime();
+
+// Set the time for the page to become visible (10 hours from now)
+let visibleTime = now + 86400000 ; // 10 hours in milliseconds
+
+// Hide the page content initially
+document.getElementById("myContent").style.display = "none";
+
+// Check if it's time to show the content
+let checkVisible = setInterval(function() {
+  // Get the current time
+  let currentTime = new Date().getTime();
+
+  // Check if it's time to show the content
+  if (currentTime >= visibleTime) {
+    // Show the page content
+    document.getElementById("myContent").style.display = "block";
+    document.getElementById("button1").style.display = "none";
+
+    // Clear the interval
+    clearInterval(checkVisible);
+  }
+}, 1000);
+
+
+
+    var m = 0;
+    speedIndex = 40;
+    var string = `
+    
+       However, Samantha soon realized that her coach had become a new obstacle.
+       As she became more successful, her coach started to become jealous and resentful of her progress.
+        The coach began to sabotage Samantha's work and undermine her confidence, 
+        feeding her old doubts and fears.\n\n\n
+
+       Samantha was devastated. The person who had helped her overcome her barriers had become a new barrier herself.
+        But instead of giving up, Sarah realized that she needed to once again push past her fears and find
+         a way to move forward.\n\n\n
+
+       She sought out new mentors and coaches, people who 
+       could help her continue to grow and overcome the obstacles in her path. 
+       And slowly but surely, she began to regain her confidence and rise above the challenges in her way.\n\n\n
+
+       Looking back, she realized that her biggest obstacles were the ones she had created herself.
+        It wasn't her competitors or clients that held her back, but her own self-doubt. 
+        But by facing those doubts head-on and working to overcome them,
+         she had achieved more than she ever thought possible.
+    `;
+    
+    function typewrite3() {
+   if (m < string.length) {
+    document.getElementById("p6").innerHTML += string.charAt(m);
+    m++;
+    setTimeout(typewrite3, speedIndex);
+   }
+    }
+
+      var j = 0;
+      var txt4 = `
+      These doubts held samantha back, preventing her from taking risks and pursuing bigger opportunities.
+       But she knew that if she wanted to reach the next level, she needed to overcome them.
+
+      So samantha began working with a coach, someone who could help her identify and address
+       the limiting beliefs that were holding her back. Together, they worked on building her
+        confidence and self-belief, and developing strategies to help her push through her fears.
+      
+      It wasn't easy, but she slowly but surely began to break through
+       her barriers. She started taking on bigger clients, and pursuing projects that
+        scared her but also excited her. And as she continued to grow and succeed,
+         her confidence only grew stronger.
+      `;
+      var speed4 = 40;
+      function typewrite2() {
+        if (j < txt4.length) {
+          document.getElementById("p5").innerHTML += txt4.charAt(j);
+          j++;
+          setTimeout(typewrite2, speed4);
+        }
+      }
+
+
+        var a = 0;
+         var txt2 = `As Samantha's reputation grew, she faced new challenges. Some were external,
+          such as competitors trying to undercut her or clients with unreasonable demands. 
+            But others were internal, as Samantha struggled to overcome her own doubts and fears.
+           Despite her successes, samantha often found herself questioning whether she was truly deserving of her achievements.
+           She worried that she had just gotten lucky, or that others would soon see through her and realize she 
+           wasn't as talented as they thought.`
+         var speeds = 40;
+ 
+         function typeWrite() {
+        if (a < txt2.length) {
+         document.getElementById("p4").innerHTML += txt2.charAt(a);
+        a++;
+         setTimeout(typeWrite, speeds);
+        }
+         }
+         
+
 
          var i = 0;
-         var txt = ' Please Wait for 24/5 hours before you continue the next chapters, titled:"Rising to the Challenge';
+         var txt = ' Please Wait for 24/5 hours before you continue the next chapters, titled:"Rising to the Challenge"';
          var speed = 50;
  
         function typeWriter() {
@@ -169,16 +332,19 @@
           var content1 = document.querySelector(".actual-content1");
           var content2 = document.querySelector(".actual-content2");
           var content3 = document.querySelector(".actual-content3");
+          var body = document.body;
           var top = document.querySelector("#scroll-to-top-btn");
           content1.style.display = "none";
           content2.style.display = "none";
           content3.style.display = "none";
+          body.style.overflow = "hidden";
           top.style.display = "none";
           setTimeout(function() {
             top.style.display = "block";
             content1.style.display = "block";
             content2.style.display = "block";
             content3.style.display = "block";
+            body.style.overflow = "scroll";
             loader1.style.display = "none"
             loader2.style.display = "none";
             loader3.style.display = "none";
@@ -207,6 +373,5 @@ function scrollToTop() {
 
        
        </script>
-    
 </body>
 </html>
