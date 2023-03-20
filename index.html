@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f8c8d43adc.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="girl-reading.ico">
+    <link rel="stylesheet" href="styles.css">
+    <title>story</title>
+</head>
+<body>
+  <button id="scroll-to-top-btn"  title="To Top" type="button" onclick="scrollToTop()">&#8593;</button>
+
+    <header class="header">
+      <button id="dark-mode-toggle">
+        <i id="dark-mode-icon" class="fas fa-sun"></i>
+       </button>
+       </div>
+ 
+          
+    </header>
+
+<main>
+    <section class="section">
+        <h2 class="header1">The Beggining of success.</h2>
+        <br><span class="span2"><em> written By Nehemiah.</em> </span>
+    
+  
+      <div class="content">
+          <div id="loader1">
+        
+          </div>
+          <div class="actual-content1">
+            <img src="girl-reading (2).jpg" id="img">
+          </div>    
+         </div>
+    </section>
+
+
+
+    <section class="section2">
+        <div class="content">
+            <div id="loader2"></div>
+            <div class="actual-content2">
+              <p class="p1">
+                <span class="span3">S</span>amantha had always dreamed of success. 
+                From a young age, she had an innate drive to achieve greatness and make a difference in the world.
+                 She had big ambitions and even bigger ideas, but no clear path to make them a reality.
+              </p>
+              <p class="p2">
+                After graduating from college, Samantha found herself in a dead-end job with no real direction.
+                She spent her days working a 9-to-5 desk job, staring at a computer screen, and dreaming of something more.
+                 But she didn't know where to start.
+    
+              </p>
+           <p class="p2">
+             One day, Samantha stumbled upon a podcast about successful entrepreneurs.
+              As she listened to their stories, she realized that she had been holding herself
+               back by not taking risks or pursuing her passions. It was time to make a change.
+ 
+              Samantha began to research ways to start her own business and stumbled upon
+               a community of like-minded individuals who were all on a similar journey to success.
+                She attended networking events, read books, and joined online forums to learn as much as she could.
+              </p>
+              <p class="p2">
+                Slowly but surely, Samantha began to make progress. She developed a business plan,
+                 reached out to potential investors, and started to build her brand. It wasn't easy, 
+                 but she was finally on the right track.
+
+               Months turned into years, and Samantha's hard work began to pay off. 
+               She secured funding for her business, hired a team, and launched her first product.
+                It was a success, and she knew that she had finally found her calling.
+                </p>
+                <p class="p2">
+                 But Samantha knew that success was not a destination, but a journey. 
+                 She continued to work hard and innovate, always looking for new ways to grow her business and make 
+                 a difference in the world.
+
+                 As she looked back on her journey, 
+                 Samantha realized that the key to success was not just hard work,
+                  but also the willingness to take risks, learn from failure, and never give up on your dreams.
+                   And with that mindset, she knew that the best was yet to come.
+              </p>
+            </div>
+           
+            <div id="loader3"></div>
+            <div class="actual-content3">
+                <img src="girl-reading (2).jpg" class="img2" alt="girl-reading.jpg" width="90%" height="350px">
+            </div>
+        </div>
+       <button onclick="typeWriter()">Next<i class="fa fa-arrow-right"></i></button>
+       <p id="demo"></p>
+    </section>
+</main>
+
+<script>
+
+</script>
+
+<center>
+<footer>
+  <p>The begining of success..</p>
+  <p>Get me via email for more stories!</p>
+  <input type="email" placeholder="Your mail.."><br>
+  <a href="mailto:ekemezienehemiah@gmail.com">
+  <button type="button">Request<i class="fa fa-telegram"></i></button>
+</a>
+<p>All rights Reserved<br>Developed by Nehemiah</p>
+</footer>
+</center>
+
+
+
+       <script>
+    //     var lastScrollTop = 0;
+    //   window.addEventListener("scroll", function(){
+    //   var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    //   if (currentScroll > lastScrollTop){
+    //    // Scrolling down
+    //    document.querySelector('.header').classList.add('hide');
+    //  } else {
+    //    // Scrolling up
+    //      document.querySelector('.header').classList.remove('hide');
+    //   }
+    //     lastScrollTop = currentScroll;
+    //  }, false);
+
+         var i = 0;
+         var txt = ' Please Wait for 24/5 hours before you continue the next chapters, titled:"Rising to the Challenge';
+         var speed = 50;
+ 
+        function typeWriter() {
+       if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+       i++;
+        setTimeout(typeWriter, speed);
+        }
+         }
+                //code for the toggle icon
+                 const toggler = document.getElementById("dark-mode-toggle");
+                 const icon = document.getElementById("dark-mode-icon")
+         
+                 //check if theme is already set in local storage;
+                 const currentTheme = localStorage.getItem("theme");
+                 if (currentTheme) {
+                     document.body.classList.add(currentTheme);
+                     icon.classList.add(currentTheme === "dark-mode" ? "fa-moon" : "fa-sun");
+                 }
+         
+                 toggler.addEventListener("click", () => {
+                     document.body.classList.toggle("dark-mode");
+                     icon.classList.toggle("fa-sun");
+                     icon.classList.toggle("fa-moon");
+         
+                     //save theme to local storage.
+                     if (document.body.classList.contains("dark-mode")) {
+                         localStorage.setItem("theme", "dark-mode");
+                     }else {
+                         localStorage.setItem("theme", "");
+                     }
+                 });
+
+
+        window.addEventListener("load", function() {
+          var loader1 = document.querySelector("#loader1");
+          var loader2 = document.querySelector("#loader2");
+          var loader3 = document.querySelector("#loader3");
+          var content1 = document.querySelector(".actual-content1");
+          var content2 = document.querySelector(".actual-content2");
+          var content3 = document.querySelector(".actual-content3");
+          var top = document.querySelector("#scroll-to-top-btn");
+          content1.style.display = "none";
+          content2.style.display = "none";
+          content3.style.display = "none";
+          top.style.display = "none";
+          setTimeout(function() {
+            top.style.display = "block";
+            content1.style.display = "block";
+            content2.style.display = "block";
+            content3.style.display = "block";
+            loader1.style.display = "none"
+            loader2.style.display = "none";
+            loader3.style.display = "none";
+           
+          }, 4000)
+        })
+      
+// Get the button element
+const scrollButton = document.getElementById("scroll-to-top-btn");
+
+// Show the button when the user scrolls down 20px
+window.onscroll = function() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollButton.style.display = "block";
+  } else {
+    scrollButton.style.display = "none";
+  }
+};
+
+// Scroll to the top of the page when the button is clicked
+function scrollToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+       
+       </script>
+    
+</body>
+</html>
