@@ -89,8 +89,7 @@
                 <img src="girl-reading (2).jpg" class="img2" alt="girl-reading.jpg" width="90%" height="300px">
             </div>
         </div>
-       <button onclick="typeWriter()" id="button1" type="button" style="display:none">Next<i class="fa fa-arrow-right"></i></button>
-       <p id="demo"></p>
+      
     </section>
     
       
@@ -154,7 +153,8 @@
      </p>
      <img src="girl-pushing.jpg" alt="girl-pushing-door.jpg" class="img2 image" height="300px">
     </section>
-    
+    <button onclick="typeWriter()" id="button1" type="button" style="display:none">Next<i class="fa fa-arrow-right"></i></button>
+       <p id="demo"></p>
 </main>
 
 
@@ -177,6 +177,7 @@
        
        
         let button2 = document.getElementById("button2");
+            let button1 = document.getElementById("button1");
         let button3 = document.getElementById("button3");
         let image = document.querySelector(".image");
         function showButton() {
@@ -187,6 +188,7 @@
        }
        function showButton3() {
         image.style.display = "block";
+           button1.style.display = "block;
        }
 
 //         let button2 = document.getElementById("button2");
@@ -304,7 +306,7 @@
 
 
          var i = 0;
-         var txt = ' Please Wait for 24/5 hours before you continue the next chapters, titled:"Rising to the Challenge"';
+         var txt = ' Please Wait for 24 hours before you continue the next chapters....."';
          var speed = 50;
  
         function typeWriter() {
