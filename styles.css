@@ -426,5 +426,6 @@ font-weight: 400;
     }
 .image {
         margin-bottom: 1rem;
+        display:none;
     }
 
