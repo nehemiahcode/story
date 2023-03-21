@@ -225,6 +225,7 @@ background-color: rgba(0, 0, 0, 0.932);
 color:white;
 width:100%;
 padding: 1rem 1rem 1rem 1rem;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 footer input {
 outline: none;
@@ -240,6 +241,11 @@ text-transform: lowercase;
 background-color: transparent;
 color:white;
 }
+footer input::placeholder {
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 footer  button {
 background-color: white;
 color:black;
@@ -265,7 +271,7 @@ background-color: gray;
 footer p:nth-child(1) {
 padding: 1rem 0 0.5rem 0;
 font-size: 19px;
-font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 font-weight: 400;
 }
 footer p:nth-child(2) {
