@@ -89,11 +89,11 @@
                 <img src="girl-reading (2).jpg" class="img2" alt="girl-reading.jpg" width="90%" height="300px">
             </div>
         </div>
-       <button onclick="typeWriter()" id="button1" type="button">Next<i class="fa fa-arrow-right"></i></button>
+       <button onclick="typeWriter()" id="button1" type="button" style="display:none">Next<i class="fa fa-arrow-right"></i></button>
        <p id="demo"></p>
     </section>
     
-      <section id="myContent">
+      
 
     <section class="chapter-3">
       <h2>Rising to the Challenge</h2>
@@ -154,7 +154,6 @@
      </p>
      <img src="girl-pushing.jpg" alt="girl-pushing-door.jpg" class="img2 image" height="300px" style="display:none">
     </section>
-  </section>
     
 </main>
 
@@ -188,30 +187,30 @@
 
 
     
-// Get the current time
-let now = new Date().getTime();
+// // Get the current time
+// let now = new Date().getTime();
 
-// Set the time for the page to become visible (10 hours from now)
-let visibleTime = now + 86400000 ; // 10 hours in milliseconds
+// // Set the time for the page to become visible (10 hours from now)
+// let visibleTime = now + 86400000 ; // 10 hours in milliseconds
 
-// Hide the page content initially
-document.getElementById("myContent").style.display = "none";
+// // Hide the page content initially
+// document.getElementById("myContent").style.display = "none";
 
-// Check if it's time to show the content
-let checkVisible = setInterval(function() {
-  // Get the current time
-  let currentTime = new Date().getTime();
+// // Check if it's time to show the content
+// let checkVisible = setInterval(function() {
+//   // Get the current time
+//   let currentTime = new Date().getTime();
 
-  // Check if it's time to show the content
-  if (currentTime >= visibleTime) {
-    // Show the page content
-    document.getElementById("myContent").style.display = "block";
-    document.getElementById("button1").style.display = "none";
+//   // Check if it's time to show the content
+//   if (currentTime >= visibleTime) {
+//     // Show the page content
+//     document.getElementById("myContent").style.display = "block";
+//     document.getElementById("button1").style.display = "none";
 
-    // Clear the interval
-    clearInterval(checkVisible);
-  }
-}, 1000);
+//     // Clear the interval
+//     clearInterval(checkVisible);
+//   }
+// }, 1000);
 
 
 
