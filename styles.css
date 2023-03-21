@@ -424,4 +424,7 @@ font-weight: 400;
        #button3 {
         display: none;
     }
+.image {
+        margin-bottom: 1rem;
+    }
 
